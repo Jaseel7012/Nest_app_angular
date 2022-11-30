@@ -13,6 +13,7 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 const myroute:Routes=[
   {
     path:'',
@@ -45,6 +46,14 @@ const myroute:Routes=[
   {
     path:'viewcourse',
     component:ViewCourseComponent
+  },
+  {
+    path:'viewfrnds',
+    component:ViewFriendsComponent
+  },
+  {
+    path:'course',
+    component:AddCourseComponent
   }
 ]
 @NgModule({
