@@ -11,6 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminComponent } from './admin/admin.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
 const myroute:Routes=[
   {
     path:'',
@@ -39,6 +40,10 @@ const myroute:Routes=[
   {
     path:'empreg',
     component:EmployeeRegisterComponent
+  },
+  {
+    path:'viewcourse',
+    component:ViewCourseComponent
   }
 ]
 @NgModule({
@@ -50,7 +55,8 @@ const myroute:Routes=[
     ContactUsComponent,
     AdminComponent,
     EmployeeLoginComponent,
-    EmployeeRegisterComponent
+    EmployeeRegisterComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
