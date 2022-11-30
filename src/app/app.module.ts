@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AdminComponent } from './admin/admin.component';
 const myroute:Routes=[
   {
     path:'',
@@ -24,6 +25,10 @@ const myroute:Routes=[
   {
     path:'cont',
     component:ContactUsComponent
+  },
+  {
+    path:'admin',
+    component:AdminComponent
   }
 ]
 @NgModule({
@@ -32,7 +37,8 @@ const myroute:Routes=[
     HomeComponent,
     AboutComponent,
     GalleryComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
