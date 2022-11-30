@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 const myroute:Routes=[
   {
     path:'',
@@ -19,6 +20,10 @@ const myroute:Routes=[
   {
     path:'gal',
     component:GalleryComponent
+  },
+  {
+    path:'cont',
+    component:ContactUsComponent
   }
 ]
 @NgModule({
@@ -26,7 +31,8 @@ const myroute:Routes=[
     AppComponent,
     HomeComponent,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
