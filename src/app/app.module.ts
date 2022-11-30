@@ -12,6 +12,7 @@ import { AdminComponent } from './admin/admin.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
+import { ViewFriendsComponent } from './view-friends/view-friends.component';
 const myroute:Routes=[
   {
     path:'',
@@ -56,7 +57,8 @@ const myroute:Routes=[
     AdminComponent,
     EmployeeLoginComponent,
     EmployeeRegisterComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    ViewFriendsComponent
   ],
   imports: [
     BrowserModule,
