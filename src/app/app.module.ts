@@ -14,6 +14,7 @@ import { EmployeeRegisterComponent } from './employee-register/employee-register
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { AddFriendComponent } from './add-friend/add-friend.component';
 const myroute:Routes=[
   {
     path:'',
@@ -54,6 +55,10 @@ const myroute:Routes=[
   {
     path:'course',
     component:AddCourseComponent
+  },
+  {
+    path:'addfrnd',
+    component:AddFriendComponent
   }
 ]
 @NgModule({
@@ -67,7 +72,8 @@ const myroute:Routes=[
     EmployeeLoginComponent,
     EmployeeRegisterComponent,
     ViewCourseComponent,
-    ViewFriendsComponent
+    ViewFriendsComponent,
+    AddFriendComponent
   ],
   imports: [
     BrowserModule,
