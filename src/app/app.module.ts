@@ -18,6 +18,7 @@ import { AddFriendComponent } from './add-friend/add-friend.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { NavuserComponent } from './navuser/navuser.component';
 const myroute:Routes=[
   {
     path:'',
@@ -79,7 +80,8 @@ const myroute:Routes=[
     AddFriendComponent,
     NavbarComponent,
     AdminNavbarComponent,
-    UserNavbarComponent
+    UserNavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
