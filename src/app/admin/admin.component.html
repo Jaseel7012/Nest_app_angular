@@ -8,14 +8,14 @@
                     <hr>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label text-light">User Name</label>
-                        <input type="text" class="form-control">
+                        <input name="username" [(ngModel)]="username" type="text" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label text-light">Password</label>
-                        <input type="password" class="form-control">
+                        <input name="pswrd" [(ngModel)]="pswrd" type="password" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-4 text-center">
-                        <a routerLink="/viewcourse" class="btn btn-light">Login</a>
+                        <button (click)="read()" class="btn btn-success">login</button>
                     </div>
                 </div>
             </div>
