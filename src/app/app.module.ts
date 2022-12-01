@@ -19,6 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { NavuserComponent } from './navuser/navuser.component';
+import { FormsModule } from '@angular/forms';
 const myroute:Routes=[
   {
     path:'',
@@ -86,7 +87,8 @@ const myroute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
